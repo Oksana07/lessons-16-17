@@ -1,0 +1,33 @@
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link:hover,
+.link:focus{
+  color: red;
+}
+
+.btn:hover,
+.btn:focus {
+  color: red;
+  background-color: aqua;
+  border: 1px solid blue;
+}
+
+.bg-box{
+  background-color: green;
+  width: 800px;
+  height: 600px;
+  background-image: url(./img/green-png-44873.png),url(https://img.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+  background-size: 800px, contain;
+}
