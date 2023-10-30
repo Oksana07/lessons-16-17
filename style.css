@@ -1,6 +1,3 @@
-a{
-  text-decoration: none;
-}
 
 .container{
   width: 1200px;
@@ -10,24 +7,17 @@ a{
   margin-right: auto;
 }
 
-.link:hover,
-.link:focus{
-  color: red;
-}
-
-.btn:hover,
-.btn:focus {
-  color: red;
-  background-color: aqua;
-  border: 1px solid blue;
-}
-
+/* background */
 .bg-box{
-  background-color: green;
-  width: 800px;
-  height: 600px;
-  background-image: url(./img/green-png-44873.png),url(https://img.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom, center;
-  background-size: 800px, contain;
+background-color: green;
+width: 1000px;
+height: 1000px;
+background-image: url(./img/green-png-44873.png),
+                  url(./img/lamp-png-34914.png),
+                  url(https://avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png),
+                  url(https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru),
+                  url(https://img.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg);
+background-repeat: repeat-x, repeat-x, repeat-y, repeat-y, no-repeat;
+background-position: bottom, top, right 30px bottom 20px, left, 50% 50%;
+background-size: 1000px 400px, 50px 100px, 50px 50px, 50px 50px, 596px 380px;
 }
