@@ -27,11 +27,11 @@ width: 1000px;
 height: 1000px;
 background-image: url(./img/green-png-44873.png),
                   url(./img/lamp-png-34914.png),
-                  url(https://avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png),
+                  url(./img/donut.png),
                   url(https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru),
                   url(https://img.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg);
 background-repeat: repeat-x, repeat-x, repeat-y, repeat-y, no-repeat;
-background-position: bottom, top, right 30px bottom 20px, left, 50% 50%;
+background-position: bottom, top, right, left, 50% 50%;
 background-size: 1000px 400px, 50px 100px, 50px 50px, 50px 50px, 596px 380px;
 }
 
@@ -39,5 +39,69 @@ background-size: 1000px 400px, 50px 100px, 50px 50px, 50px 50px, 596px 380px;
 .services-item {
   display: flex;
   align-items: center;
+}
+
+.services-item::before{
+content:' ';  
+background-image: url(./img/car.svg);
+background-size: contain;
+background-repeat: no-repeat;
+
+display: none;
+
+width: 140px;
+height: 120px;
+
+margin-right: 10px;
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.services-item:hover::before{
+  cursor: pointer;
+  display: block;
+}
+
+.services-item::after {
+  /* content: ' '; */
+  /* background-image: url(./img/free-icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat; */    
+  background-color: red;
+  /* display: block; */
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  margin-left: 10px;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* .services-item:hover::after{
+  background-color: blue;
+  cursor: pointer;
+} */
+
+
+/* first-letter */
+.tex::first-letter{
+  font-size: 100px;
+  color: blueviolet;
+}
+
+/* selection  */
+::selection{
+  background-color: rgba(255, 0, 0, 0.2);
+  color: black;
+}
+
+/*  first-line */
+
+.tex::first-line{
+  font-size: 70px;
+  color: green;
 }
 
